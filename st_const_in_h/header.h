@@ -4,7 +4,8 @@
 namespace st_const_in_h
 {
 namespace config {
-	static const int g_int = 3;
+	static const int g_int0 = 3;
+	static const int g_int1 = 5;
 }
 }
 
