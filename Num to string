@@ -1,0 +1,11 @@
+void AppendNumberTo(std::string* str, uint64_t num) {
+  char buf[30];//(2**65-1) 36893488147419103231L  len(str(2**65-1)) 20
+  snprintf(buf, sizeof(buf), "%llu", (unsigned long long) num);
+  str->append(buf);
+}
+
+std::string NumberToString(uint64_t num) {
+  std::string r;
+  AppendNumberTo(&r, num);
+  return r;
+}
